@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Eagle+Lake|Yatra+One">
+    <script src="assets/javascript/game.js" defer></script>
+    <title>GOT Hangman</title>
+</head>
+
+<body>
+    <div class="container-fluid px-4">
+        <div class="row">
+            <header class="col-md-12 mt-4 pt-4" id="head1">A GOT Hangman</header>
+        </div>
+        <main class="container-fluid">
+            <div class="row">
+                <button class="col-4 offset-4 center-text" id="startbut">Click Here to Start!</button>
+            </div>
+            <div class="row">
+                <div class="col-5 mt-4" id="statdiv">
+                    <h1 id="stattxt">Valar Morghulis</h1>
+                    <h3>Guesses left:
+                        <span id="nguessleft">...</span>
+                    </h3>
+                    <h3>Games won so far:
+                        <span id="nwon">...</span>
+                    </h3>
+                    <h3>Games lost:
+                        <span id="nloss">...</span>
+                    </h3>
+                    <img class="animg mx-auto mt-4 img-responsive" src="assets/images/js.gif" alt="disp_pic">
+                </div>
+                <div class="col-1 mt-4"></div>
+                <div class="col-6 mt-4" id="gamediv">
+                    <h1>Valar Dohaeris</h1>
+                    <h3>Pick the letters and guess the word...</h3>
+                    <br>
+                    <h3>Letters Guessed:
+                        <span id="guesslist">...</span>
+                    </h3>
+                    <br>
+                    <h2>The Word:</h2>
+                    <br>
+                    <div class="cc">
+                        <br>
+                        <span id="hmword">...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
