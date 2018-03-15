@@ -26,8 +26,8 @@ var got = {
     houseInd: -1,
     wrdInd: -1,
     wordset: function () {
-        this.houseInd = Math.floor(Math.random() * (this.wlist.length - 1));
-        this.wrdInd = Math.floor(Math.random() * (this.wlist[0].length - 1));
+        this.houseInd = Math.floor(Math.random() * this.wlist.length);
+        this.wrdInd = Math.floor(Math.random() * this.wlist[0].length);
         this.word = this.wlist[this.houseInd][this.wrdInd].split("");
         var hword = this.wlist[this.houseInd][this.wrdInd].replace(/\S/g, "_");
         document.getElementById("hmword").textContent = hword;
